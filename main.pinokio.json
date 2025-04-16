@@ -1,0 +1,18 @@
+{
+  "name": "Consistent Character Generator",
+  "description": "Run fofr's Consistent Character model locally using Docker with a browser UI.",
+  "scripts": [
+    {
+      "name": "Run Model in Docker",
+      "shell": "docker run -d -p 5000:5000 --gpus=all r8.im/fofr/consistent-character@sha256:e90b0b680b1dca1bab496f163fdfc7cff174f7cd18d094bf57664f1891f2e857"
+    },
+    {
+      "name": "Open UI",
+      "shell": "start index.html"
+    }
+  ],
+  "gui": {
+    "type": "html",
+    "file": "index.html"
+  }
+}
